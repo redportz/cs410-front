@@ -1,0 +1,20 @@
+[
+    {
+      "UserId": 1,
+      "FirstName": "test",
+      "LastName": "test",
+      "PhoneNumber": "123456789",
+      "Address": "1234 Elm Street",
+      "Email": "test@test.com",
+      "Role": "test"
+    },
+    {
+      "UserId": 2,
+      "FirstName": "string",
+      "LastName": "string",
+      "PhoneNumber": "987654321",
+      "Address": "2468 Oak Road",
+      "Email": "string@string.com",
+      "Role": "string"
+    }
+  ]

@@ -1,0 +1,78 @@
+/* message-style.css */
+.envelope {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.envelope-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.envelope-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.envelope-header button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.envelope-header button:hover {
+    background-color: #3e8e41;
+}
+
+.envelope-body {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.envelope-body label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.envelope-body input,
+.envelope-body textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.envelope-body textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.envelope-footer {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    text-align: right;
+}
+
+.envelope-footer button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.envelope-footer button:hover {
+    background-color: #3e8e41;
+}

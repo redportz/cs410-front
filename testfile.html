@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XMLHttpRequest API Test</title>
+</head>
+<body>
+  <h1>API Test using XMLHttpRequest</h1>
+  <p>Open your browser console to see the results.</p>
+  <script>
+const myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+const raw = JSON.stringify(
+  {
+    "firstName": "Eric",
+    "lastName": "Zba",
+    "dateOfBirth": "2025-03-10",
+    "ssn": "123456789",
+    "email": "PatientTest@email.com",
+    "password": "pass123",
+    "role": "Patient"
+}
+
+);
+
+const requestOptions = {
+  method: "POST",
+  headers: myHeaders,
+  body: raw,
+  redirect: "follow"
+};
+
+fetch("https://healthcaredbbackendapi.azure-api.net/UserInfo/AddUserInfo", requestOptions)
+  .then((response) => response.text())
+  .then((result) => console.log(result))
+  .catch((error) => console.error('Error:', error));
+
+  </script>
+</body>
+</html>

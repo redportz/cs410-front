@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi's Healthcare</title>
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/top-bar.css">
+    <link rel="stylesheet" href="/css/acccount-creation.css"></head>
+<body>
+    <header>
+        <div id="left-topbar">
+            <a id="healthcare-icon" href="/index.html"><img src="/images/Logo.png" alt="Luigi Healthcare Logo"></a>
+        </div>
+        <div id="middle-topbar">
+            <p id="Luigi's Healthcare">Luigi's Healthcare</p>
+        </div>
+        <div id="right-topbar">
+                <!-- <button class="create-account-btn" title="Click to Create Account" href="">
+                    <span>Create</span>
+                    <span>Account</span>
+                 </button> -->
+            <a id="login-btn" title="Click to log in" href="/account-stuff/login-page.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">        <div class="form-header">
+                <img src="/images/Logo.png" alt="Luigi's Healthcare Logo">
+                <h2>Luigi Healthcare</h2>
+            </div>
+    
+            <form id="patient-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John"  required>
+            
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+            
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="ssn">Social Security Number:</label>
+                <input type="text" id="ssn" name="ssn" maxlength="9" placeholder="123456789" required oninput="this.value = this.value.replace(/\D/g, '')">
+                
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Example@email.com" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password here">
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
+
+                <h3 class="insurance-header">Insurance Information</h3>
+            
+                <label for="insurance-name">Insurance Name:</label>
+                <input type="text" id="insurance-name" name="insurance-name" placeholder="ScamCare" required>
+            
+                <label for="member-id">Member ID:</label>
+                <input type="text" id="member-id" name="member-id" placeholder="1234" required>
+            
+                <button title="Click to Create Account" type="submit" class="create-account-btn" >Create Account</button>
+            </form>
+
+            <h1 id="account-created-message">Account<br>Created</h1>
+            
+            
+        </div>
+    </main>
+    
+    
+
+    <footer>
+        <a href="/feedback/feedback.html"></a>
+    </footer>
+
+    <script type="module" src="/js/patientRegistration.js"></script>
+</body>
+</html>

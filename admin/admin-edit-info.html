@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luigi Healthcare</title>
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@geoapify/geocoder-autocomplete/styles/minimal.css">
+    <link rel="stylesheet" href="/css/top-bar.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/sidebar-menu.css" />
+    <link rel="stylesheet" href="/css/doctor-accountinfo.css" />
+  </head>
+  
+  <body>
+    <header>
+      <div id="left-topbar">
+        <a id="healthcare-icon"><img src="/images/Logo.png" alt="Luigi's Healthcare Logo" /></a>
+      </div>
+      <div id="middle-topbar">
+        <p id="Luigi Healthcare">Luigi Healthcare</p>
+      </div>
+      <div id="right-topbar">
+        <a id="logout-btn" title="Click to log out" href="/account-stuff/login-page.html">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+        <button class="menu-btn" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+  
+    <!-- sidebar-->
+    <div id="sidebar-container" nav_menu="Admin"></div>
+  
+  
+    <!-- main content -->
+  <div class="content-wrapper">
+      <div class="main-container">
+          <div class="account-box">
+             
+  
+              <div class="profile-columns">
+            
+
+              <!--personal info section --->
+                <div class="profile-right">
+                  <h3>Personal Info:</h3>
+              
+                  <p><strong>Name:</strong><br><span id="firstName"></span> <span id="lastName"></span></p>
+                  <p><strong>Date of Birth:</strong><br><span id="dob"></span></p>
+
+
+                  <p><strong>Email Address:</strong><br>
+                    <span id="email"></span></p>
+
+                    <div id="phone-and-address-container">
+                      <label for="address-display"><strong>Mailing Address:</strong></label><br>
+                      <span id="address-display"></span>
+                    
+                      <p><strong>Phone Number:</strong><br>
+                        <span id="phoneNumber-display"></span>
+                      </p>
+                    
+                      <button id="edit-info-btn" class="button">Edit Information</button>
+                    </div>
+                    
+                    <div id="edit-container" class="hidden">
+                      <form id="edit-form">
+                        <label for="autocomplete-input"><Strong>Mailing Address:</Strong></label><br>
+                        <input id="autocomplete-input" type="text" autocomplete="off">
+                        <ul id="suggestions-list" style="list-style: none; padding-left: 0;"></ul>
+                    
+                        <label for="phone"><strong>Phone Number:</strong></label><br>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <button type="submit" class="edit-btn">Save Changes</button>
+                        <button type="button" id="cancel-personal-info-edit">Cancel</button>
+                      </form>
+                    </div>
+                    
+</div>
+            
+             
+          </div>
+        </div>
+      </div>
+    </div>
+  
+                 
+    <script src="/js/load-sidebar.js"></script>
+    <script type="module" src="/js/logout.js"></script>
+    <script src="/js/sidebar-menu.js"></script>
+    <script type="module" src="/js/patient-account-info.js"></script> 
+    <script src="https://unpkg.com/@geoapify/geocoder-autocomplete@1.2.0/dist/geocoder-autocomplete.min.js"></script>
+    <script src="/js/autocomplete-address.js"></script>
+  
+    
+    
+  </body>
+  </html>

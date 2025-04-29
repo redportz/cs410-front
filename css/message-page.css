@@ -1,0 +1,165 @@
+
+#outer-container {
+    background-color: var(--navbar-bg);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: fit-content;
+    position: relative;
+    justify-self: center;
+}
+
+#dropdown-toggle {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#dropdown-toggle:hover {
+    background-color: var(--button-hover);
+}
+
+.dropdown-list {
+    background-color: var(--card-bg);
+    color: #333;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 250px;
+    overflow-y: auto;
+    width: 90%;
+    z-index: 10;
+}
+
+.dropdown-list button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    padding: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown-list button:hover {
+    background-color: var(--hover-color);
+    border-radius: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.form-container {
+    width: 60%;
+    height: 60%;
+}
+#message-who{
+    min-height: 370px;
+    justify-content: normal;
+    height: 50px;
+    box-shadow:none;
+}
+
+
+/* message box */
+
+#messages-container{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    color: red;
+}
+
+#message-box{
+    border-radius: 15px;
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    overflow: auto;
+    color: black;
+
+}
+
+#message-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#message-list li {
+    width: 300px;
+    word-wrap: break-word;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+}
+
+/* Messages from the sender (align right) */
+.sender {
+    background-color: lightblue;
+    align-self: flex-end;
+    text-align: left;
+}
+
+/* Messages from the receiver (align left) */
+.receiver {
+    background-color: lightgray;
+    align-self: flex-start;
+    text-align: left;
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Arrange elements in a row */
+    align-items: center; /* Align vertically */
+    gap: 10px; /* Add some spacing between input and button */
+    padding: 10px;
+    padding-left: 0;
+}
+
+#message-text {
+    flex: 1; /* Allow the input to take up remaining space */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#message-container button{
+    padding: 10px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#message-container button:hover {
+    background-color: var(--button-hover);
+}
+#load-more{
+    margin: 10px;
+    justify-self: center;
+}
+
+#chat-header{
+    justify-self: center;
+    font-size: 35px;
+    margin: 5px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi Healthcare</title>
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/top-bar.css">
+    <link rel="stylesheet" href="/css/sidebar-menu.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="/css/calendar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</head>
+<body>
+    <header>
+        <div id="left-topbar">
+            <a id="healthcare-icon"><img src="/images/Logo.png" alt="Luigi's Healthcare Logo"></a>
+        </div>
+        <div id="middle-topbar">
+            <p id="Luigi Healthcare">Luigi Healthcare</p>
+        </div>
+        <div id="right-topbar">
+            <a id="logout-btn" title="Click to log out" href="/account-stuff/login-page.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+            <button class="menu-btn" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="sidebar-container" nav_menu="Doctor"></div>
+
+    <main>
+        <div id='calendar'></div>
+
+
+    <div id="appointment-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Manage Appointment</h2>
+            <form id="appointment-form">
+                <label for="appointment-doctor">Doctor:</label>
+                    <select id="appointment-doctor" required>
+                        <option value="">Select a doctor</option>
+                    </select>
+                <label for="appointment-date">Date:</label>
+                <input type="date" id="appointment-date" required>
+                <label for="appointment-time">Time:</label>
+                <select id="appointment-time" name="appointment-time" class="appointment-time" required></select>
+                <label for="appointment-reason">Reason:</label>
+                <input type="text" id="appointment-reason" required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="edit-appointment-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Edit Appointment</h2>
+            <form id="edit-appointment-form">
+                
+                <label for="edit-appointment-date">Date:</label>
+                <input type="date" id="edit-appointment-date" required>
+                <label for="edit-appointment-time">Time:</label>
+                <select id="edit-appointment-time" name="appointment-time" class="appointment-time" required></select>
+                <label for="edit-appointment-reason">Reason:</label>
+                <input type="text" id="edit-appointment-reason" required>
+                <button type="button" id="save-edit-btn">Save</button>
+                <button type="button" id="delete-btn" class="delete">Delete</button>
+            </form>
+        </div>
+    </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/logout.js"></script>
+    <script src="/js/load-sidebar.js"></script>
+    <script src="/js/sidebar-menu.js"></script>
+    <script type="module" src="/js/Calendar.js"></script>
+</body>
+</html>

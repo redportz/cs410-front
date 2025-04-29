@@ -1,0 +1,68 @@
+.menu-btn {
+  margin-bottom: 1px;
+  flex-direction: column;
+  height: 47px;
+  color: black;
+  background-color: var(--login-btn);
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  width: 80px;
+    background: none;
+    border: none;
+    color:var(--menu-icon);
+    font-size: 50px;
+    cursor: pointer;
+  }
+  
+  .menu-btn:hover{
+    color: var(--menu-hover);
+  }
+
+  /* Sidebar container */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0; /* Place sidebar on the right */
+    left: auto; /* Not needed, but clarifies that we're not using the left side */
+    width: 250px;
+    height: 100vh;
+    background-color: #2c6e49;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Hide off the right side by default */
+    z-index: 999;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Slide into view from the right */
+  }
+  
+  
+  /* Close button inside the sidebar */
+  .close-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    float: right;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  /* Sidebar list styling */
+  .sidebar ul {
+    list-style: none;
+    margin-top: 2rem;
+  }
+  
+  .sidebar li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }

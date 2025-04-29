@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi Healthcare - New Message</title>
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/var/www/Luigi-Healthcare/css/main.css">
+    <link rel="stylesheet" href="/var/www/Luigi-Healthcare/css/top-bar.css">
+    <style>
+        .envelope {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .envelope-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .envelope-header h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .envelope-header button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .envelope-header button:hover {
+            background-color: #3e8e41;
+        }
+        
+        .envelope-body {
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+        
+        .envelope-body label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .envelope-body input, .envelope-body textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .envelope-body textarea {
+            height: 200px;
+            resize: vertical;
+        }
+        
+        .envelope-footer {
+            padding: 20px;
+            border-top: 1px solid #ccc;
+            text-align: right;
+        }
+        
+        .envelope-footer button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .envelope-footer button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="left-topbar">
+            <a id="healthcare-icon"><img src="/var/www/Luigi-Healthcare/images/Logo.png" alt="Luigi's Healthcare Logo"></a>
+        </div>
+        <div id="middle-topbar">
+            <p id="Luigi Healthcare">Luigi Healthcare</p>
+        </div>
+        <div id="right-topbar">
+                
+            <a id="logout-btn" title="Click to log out" href="/var/www/Luig-Healthcare/account-stuff/login-page.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="envelope">
+            <div class="envelope-header">
+                <h2>New Message</h2>
+                <button id="cancel-btn">Cancel</button>
+            </div>
+            <div class="envelope-body">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" placeholder="Message Subject">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="envelope-footer">
+                <button id="send-btn">Send to Doctor</button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

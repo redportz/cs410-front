@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi Healthcare</title>
+    <script src="https://kit.fontawesome.com/1ba04f7b66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/top-bar.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/login-page.css">
+    <link rel="stylesheet" href="/css/sidebar-menu.css">
+    <link rel="stylesheet" href="/css/message-page.css">
+    <!-- Add style sheet here -->
+</head>
+<body>
+    <header>
+
+
+        <div id="left-topbar">
+            <a id="healthcare-icon"><img src="/images/Logo.png" alt="Luigi's Healthcare Logo"></a>
+        </div>
+        <div id="middle-topbar">
+            <p id="Luigi Healthcare">Luigi Healthcare</p>
+        </div>
+        <div id="right-topbar">
+            <a id="logout-btn" title="Click to log out" href="/account-stuff/login-page.html">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+            <button class="menu-btn" aria-label="Open Menu">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </header>
+        </div>
+        <div id="sidebar-container" nav_menu="Patient"></div>
+
+    <main>
+        <div id="outer-container">
+
+        <div id="message-who" class="form-container">
+            <h3>Who would you like to Message?</h3>
+            <button id="dropdown-toggle">Select Recipient ▼</button>
+            <ul id="user-list" class="dropdown-list hidden"></ul>
+        </div>
+
+
+    <div id="message-container" class="hidden">
+        <button >Back</button>
+        <h3 id="chat-header">Messages</h3>
+        
+        <form id="send-message-form">
+            <input type="text" id="message-text" required>
+            <button type="submit">Send</button>
+        </form>
+        
+        <div id="message-box">
+            <ul id="message-list"></ul>
+        </div>
+        <button id="load-more">Load Older Messages</button>
+        
+    </div>
+
+            <!-- sending message box -->
+             <div id="sending-message-container" class="sending-message hidden">
+                <h1>Sending message</h1>
+             </div>
+
+            <!-- message sent box -->
+             <div id="message-sent-container" class="message-sent hidden">
+                <h1>Message sent</h1>
+                <button>close</button>
+             </div>
+</div>
+        </main>
+        <!-- <script type="module" src="config.js"></script> -->
+        <script type="module" src="/js/getPeople.js"></script>
+    <script type="module" src="/js/messages.js" defer></script>
+    <script src="/js/load-sidebar.js"></script>
+    <script type="module" src="/js/logout.js"></script>
+    <script src="/js/sidebar-menu.js"></script>
+    <script src="/js/list-of-buttons-dropdown.js"></script>
+</body>
+</html>

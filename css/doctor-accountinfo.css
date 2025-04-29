@@ -1,0 +1,146 @@
+/* Fullscreen wrapper and background */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    padding: 20px;
+  }
+  
+  .main-container {
+    background-color: #295C3A;
+    border-radius: 30px;
+    padding: 40px;
+    width: 95vw;
+    max-width: 1300px;
+    height: 80vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Allow scroll if white box is taller */
+    overflow-y: auto;
+  }
+  
+  /* White center box */
+  .account-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 60px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 100%;
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: black;
+    line-height: 1.6;
+  }
+  
+  
+  /* Split layout inside white box */
+  .profile-columns {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .profile-left,
+  .profile-right {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .profile-left p,
+  .profile-right p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* form fields */
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+
+  /* save button */
+  .edit-btn,#edit-info-btn,#cancel-personal-info-edit {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .edit-btn:hover {
+    background-color: darkred;
+  }
+
+
+  /* back button */
+  .back-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+    z-index: 1;
+  }
+  
+  .back-btn i {
+    margin-right: 6px;
+  }
+  
+  .back-btn:hover {
+    background-color: darkred;
+  }
+  
+.hidden{
+  display: none;
+}
+
+#suggestions-list {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 4px;
+  padding: 8px 0;
+  background-color: white;
+  z-index: 1000;
+  position: absolute;
+}
+
+#suggestions-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#suggestions-list li:hover {
+  background-color: #f0f0f0;
+}

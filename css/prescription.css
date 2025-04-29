@@ -1,0 +1,113 @@
+#Prescription-display{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+    padding: 20px 0;
+}
+#Prescription-display.onclick{
+    display: inline;
+}
+
+.prescription{
+    align-content: center;
+
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    padding: 0;
+    background-color: var(--navbar-bg);
+    color: white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+#prescription-container{
+    background-color: var(--navbar-bg);
+    color: white;
+    border-radius: 30px;
+    width: 50%;
+    padding: 10px;
+}
+.prescription-container{
+    background-color: var(--navbar-bg);
+    color: white;
+    border-radius: 30px;
+    width: 50%;
+}
+
+.prescription-container h3{
+    justify-self: center;
+}
+
+#Prescriptions-container .onclick {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-content: end;
+    gap: 10px; 
+    margin-top: 50px;
+    margin-bottom: 0px;
+    height: 40vh;
+
+
+}
+
+
+#prescription-box.onclick {
+    height: 80%;
+    align-content: center;
+    justify-items: center;
+}
+
+
+
+
+/* This is where the div for no prescriptions starts */
+#no-prescriptions {
+    flex-direction: column;
+    background-color: var(--navbar-bg);
+    width: 30%;    
+    border-radius: 15px;
+}
+
+#no-prescriptions p{
+    justify-self: center;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+#no-prescriptions a {
+    margin-top: auto; 
+    display: flex; 
+    justify-content: center;
+    text-decoration: none;
+}
+
+#no-prescriptions button {
+    padding: 10px 20px; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: var(--button-color);
+    color: white;
+    font-size: 18px;
+
+}
+
+#no-prescriptions button:hover {
+    background-color: var(--button-hover);
+}
+
+.no-prescriptions {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}

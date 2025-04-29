@@ -1,0 +1,87 @@
+/* Green background container */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+.main-container {
+  background-color: #295C3A;
+  border-radius: 25px;
+  padding: 40px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* account box */
+.account-box {
+  background-color: rgb(10, 95, 124);
+  border-radius: 15px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.account-box h2 {
+  color: #520909;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+/* email input */
+.account-box input[type="email"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #600505;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.red-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.red-btn:hover {
+  background-color: #ff0033;
+}
+
+/* back button */
+.back-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #EE1D3A;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  background-color: #c71730;
+}
+
+.twofactor-box {
+  background-color: #295C3A; /* Green background */
+  color: white; /* Optional: makes text readable */
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
